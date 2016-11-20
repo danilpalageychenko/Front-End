@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Таблица</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   </head>
+   <body>
+      <header>
+         <img id="top" src="webLogo.png" alt="Изображение" width="180" height="100"  />
+         <h1>Основы Web-технологий</h1>
+         <nav>
+            <ul>
+               <li><a href="index.html">Главная</a></li>
+               <li><a href="web-technologies.html">Web-технологий</a>
+                  <ul>
+                     <li><a href="html.html">HTML</a></li>
+                     <li><a href="css.html">CSS</a></li>
+                     <li><a href="js.html">JavaScript</a></li>
+                  </ul>
+               </li>
+               <li><a href="calc.html">Калькулятор</a></li>
+               <li><a href="test.html">Тест</a></li>
+            </ul>
+      </nav>
+      </header>
+      <main>
+         <form id="calc" name="calc">
+            <table border="1">
+               <tr>
+                  <td colspan="5">
+                     <input type="text" name="iput">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <button type="button">7</button>
+                  </td>
+                  <td>
+                     <button type="button">8</button>
+                  </td>
+                  <td>
+                     <button type="button">9</button>
+                  </td>
+                  <td>
+                     <button type="button">/</button>
+                  </td>
+                  <td>
+                     <button type="button">C</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <button type="button">4</button>
+                  </td>
+                  <td>
+                     <button type="button">5</button>
+                  </td>
+                  <td>
+                     <button type="button">6</button>
+                  </td>
+                  <td>
+                     <button type="button">*</button>
+                  </td>
+                  <td>
+                     <button type="button">&plusmn;</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <button type="button">1</button>
+                  </td>
+                  <td>
+                     <button type="button">2</button>
+                  </td>
+                  <td>
+                     <button type="button">3</button>
+                  </td>
+                  <td>
+                     <button type="button">-</button>
+                  </td>
+                  <td rowspan="2">
+                     <button type="button">=</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <button type="button">0</button>
+                  </td>
+                  <td>
+                     <button type="button">.</button>
+                  </td>
+                  <td>
+                     <button type="button">+</button>
+                  </td>
+               </tr>
+            </table>
+         </form>
+      </main>
+      <footer>
+         <address>
+            <a href="mailto:danilpalageychenko@gmail.com">Пишите: danilpalageychenko@gmail.com</a>
+         </address>
+         <!--Туту я не понял, нужно использовать тег <time> или можно просто написать год?-->
+         © Палагейченко Д.С., 2016
+      </footer>
+   </body>
+</html>
