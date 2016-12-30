@@ -37,14 +37,22 @@ function elemInput()
    {
       chislo1 = Number(chislo1);
       chislo2 = Number(chislo2);
-      /*
+      
       console.log("res   " + res);
       console.log("chislo1   " + chislo1);
       console.log("chislo2   " + chislo2);
-      */
-      if (chislo1 !=0 || chislo2 != 0)
+      
+      if (znak == "/" && chislo2 == 0)
       {
-       switch (znak){
+         pole.value = "Деление на ноль невозможно";
+         res = null;
+         clear();
+         j = 1;
+         p = 0;
+      }
+      else if (chislo1 !=0 || chislo2 != 0)
+      {
+         switch (znak){
             case "-":
                res = chislo1 - chislo2;
                break;
@@ -58,8 +66,9 @@ function elemInput()
                res = chislo1 * chislo2;
                break;
          }
+         pole.value = res;         
       }
-      if (res != null && chislo1 == 0 && chislo2 == 0 )
+      else if (res != null && chislo1 == 0 && chislo2 == 0 )
       {
          switch (znakEq){
             case "-":
