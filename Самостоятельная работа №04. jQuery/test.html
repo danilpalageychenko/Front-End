@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Таблица</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="js/jquery-3.1.1.min.js"></script>
+   </head>
+   <body>
+      <div class="head">
+         <header>
+            <div class="image"><img id="top" src="webLogo.png" alt="Изображение" width="180" height="100"  /></div>
+            <div class="h1"><h1>Основы Web-технологий</h1></div>
+            <div class="nav">
+               <nav>
+                  <ul>
+                     <li><a href="index.html">Главная</a></li>
+                     <span class="link">
+                     <li><a href="web-technologies.html">Web-технологий</a>
+                        <ul>
+                           <li><a href="html.html">HTML</a></li>
+                           <li><a href="css.html">CSS</a></li>
+                           <li><a href="js.html">JavaScript</a></li>
+                        </ul>
+                     </li>
+                     </span>
+                     <li><a href="calc.html">Калькулятор</a></li>
+                     <li><a href="test.html">Тест</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </header>
+      </div>
+      <div class="main">
+         <main>
+            <form id="test" name="test"> 
+               <p>
+               Какой тег предназначен для создания ссылок:<br />
+               <input type="radio" name="question1" value="&lt;a&gt;" />&lt;a&gt;<br />
+               <input type="radio" name="question1" value="&lt;a /&gt;" />&lt;a /&gt;<br >
+               <input type="radio" name="question1" value="&lt;ref&gt;" />&lt;ref&gt;<br />
+               <input type="radio" name="question1" value="&lt;ref /&gt;" />&lt;ref /&gt;<br />
+               </p>
+               <p>
+               Какой тег предназначен для создания нумерованного списка:<br />
+               <input type="radio" name="question2" value="&lt;li&gt;" />&lt;li&gt;<br />
+               <input type="radio" name="question2" value="&lt;dl&gt;" />&lt;dl&gt;<br >
+               <input type="radio" name="question2" value="&lt;ol&gt;" />&lt;ol&gt;<br />
+               <input type="radio" name="question2" value="&lt;ul&gt;" />&lt;ul&gt;<br />
+               </p>
+               <p>
+               Какой тег предназначен для передачи служебной информации браузеру:<br />
+               <input type="radio" name="question3" value="&lt;info&gt;" />&lt;info&gt;<br />
+               <input type="radio" name="question3" value="&lt;info /&gt;" />&lt;info /&gt;<br >
+               <input type="radio" name="question3" value="&lt;meta&gt;" />&lt;meta&gt;<br />
+               <input type="radio" name="question3" value="&lt;meta /&gt;" />&lt;meta /&gt;<br />
+               </p>
+               <p>
+               Какие теги используются при создании таблицы:<br />
+               <!--Тут ошибка в слове "bodyt" или так надо?-->
+               <input type="checkbox" name="question4" value="&lt;bodyt&gt;" />&lt;bodyt&gt;<br />
+               <input type="checkbox" name="question4" value="&lt;td&gt;" />&lt;td&gt;<br />
+               <input type="checkbox" name="question4" value="&lt;caption&gt;" />&lt;caption&gt;<br />
+               <input type="checkbox" name="question4" value="&lt;column&gt;" />&lt;column&gt;<br />
+               </p>
+               <p>
+               Какие атрибуты используются при создании форм:<br />
+               <input type="checkbox" name="question5" value="autocomplete" />autocomplete<br />
+               <input type="checkbox" name="question5" value="action" />action<br />
+               <input type="checkbox" name="question5" value="charset" />charset<br />
+               <input type="checkbox" name="question5" value="validate" />validate<br />
+               </p>
+               <p>
+               <button type="button">Результат</button>
+               </p>
+            </form>
+         </main>
+      </div>
+      <div class="footer">
+         <footer>
+            <address>
+               <a href="mailto:danilpalageychenko@gmail.com">Пишите: danilpalageychenko@gmail.com</a>
+            </address>
+            <!--Туту я не понял, нужно использовать тег <time> или можно просто написать год?-->
+            © Палагейченко Д.С
+         </footer>
+         <script src="js/scriptTest.js"></script>
+      </div>
+   </body>
+</html>
